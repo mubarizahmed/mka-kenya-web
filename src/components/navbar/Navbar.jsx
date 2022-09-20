@@ -1,18 +1,19 @@
 import React from 'react'
 import { BrowserRouter, Route, Link} from 'react-router-dom';
+import Logo from '../../logo.svg';
+import './navbar.css';
 
 const Navbar = () => {
   return (
-    <nav>
-    <ul>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/about">About</Link>
-      </li>
-    </ul>
-  </nav>
+    <nav className="navbar">
+      <div className="navbar-logo">
+        <img src={Logo}/>
+      </div>
+      <div className="navbar-links">
+        <Link className="navbar-link" to="/">Home</Link>
+        <Link className="navbar-link" to="/about">About</Link>
+      </div>
+    </nav>
   )
 }
 
