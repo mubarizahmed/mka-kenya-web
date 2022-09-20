@@ -1,0 +1,32 @@
+.navbar{
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 5rem;
+  background-color: black;
+  margin-bottom: 1rem;
+  gap: 4rem;
+}
+
+.navbar-logo{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+  .navbar-logo img{
+    object-fit: contain;
+    width:5rem;
+  }
+
+.navbar-links{
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: var(--color)
+}
