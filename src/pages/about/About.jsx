@@ -50,6 +50,17 @@ const About = () => {
           </div>
       </div>
 
+      <div className='pledge-container'>
+        <h1>Our Pledge</h1>
+        <h2>َأَشْهَدُ أنْ لَّا إِلٰهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيْكَ لَهُ وَأشْهَدُ أنَّ مُحَمَّدًا عَبْدُهُ وَرَسُوْلُهُ</h2>
+        <p>I bear witness that there is none worthy of worship except Allah. </p>
+        <p>He is One and has no partner, and I bear witness that Muhammad صلى الله عليه وسلم is His servant and Messenger.</p>
+        <p>I solemnly pledge that I shall always be ready to sacrifice my life, wealth, time and honour for the sake of my faith, country and nation.</p>
+        <p>Likewise, I shall be ready to offer any sacrifice for guarding the institution of Khilafat-e-Ahmadiyya.</p>
+        <p>Moreover, I shall deem it essential to abide by any “Maroof” decision made by Khalifatul Masih</p>
+        <h2>Inshallah</h2>
+      </div>
+
       
       <footer>
         <div className="footer-1">

@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import {Home, About, NoPage} from "./pages"
+import {Home, About, Departments, NoPage} from "./pages";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,6 +14,7 @@ root.render(
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="department" element={<Departments />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
