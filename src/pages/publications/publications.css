@@ -1,0 +1,243 @@
+.h2{
+    font-family: 'roboto';
+    font-size: 50px;
+}
+
+.media-scroller{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 43%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  
+}
+
+.media-element{
+    background-color:white;
+    background-size: contain;
+    border-radius: 10px;
+    display: flex;
+    padding: 4%;
+    margin: 4%;
+    text-align: justify;
+    align-items: flex-start;
+    transition: all 1.5s cubic-bezier(0,1,0,1);
+}
+
+.media-element:hover{
+    background-color: rgba(5, 175, 232, 0.201);
+    transform: scale(1.1);
+    transition: all 1.5s cubic-bezier(0,1,0,1);
+}
+
+.books h1{
+    padding: 20px 0 10px 10% ;
+    margin: 0;
+    
+}
+
+.khadim{
+    background-color: rgb(5, 175, 232);
+    height: 700px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.khadim-text{
+    position:absolute;
+    top: 50%;
+    left: 60%;
+    margin-right: 10%;
+
+    
+}
+.khadim h1{
+    padding: 0px 0 0px 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 60px;;
+    margin: 0;
+}
+
+
+
+.issue{
+
+    font-size: 30px;
+    font-family: 'roboto';
+    background-color: black;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    text-transform: uppercase;
+    transition: all 2s ease;
+}
+
+.col{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 30px;
+    
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+
+.container{
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.buttons{
+    width: 100px;
+    margin-top: 40px;
+    margin-left: 58%;
+
+}
+
+.btn{
+    display: inline-block;
+    height:10px;
+    width:10px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin:0 5px 0 5px;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+.active{
+    height:10px;
+    width:30px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.col2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    padding-right: 100px;
+    
+}
+
+.alhudaa-content{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 30px;
+    width: 400px;
+    height: 500px;
+    align-self: flex-start;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.alhudaa{
+    background-color: rgb(5, 175, 232);
+    padding-bottom: 100px;
+
+}
+
+.alhudaa-cover{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.container3{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alhudaa-issue{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: black;
+    text-transform: uppercase;
+    font-family: roboto;
+    align-items: flex-start;
+    align-self: flex-start;
+    padding-left: 2px;
+}
+
+.alhudaa-issue >p{
+    margin: 0;
+    padding: 0px;
+    font-family: roboto;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.row2 >img{
+    margin: 0;
+    padding: 0;
+}
+
+.row2{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.button{
+    height: 20px;
+    width: 120px;
+    background-color:black;
+    color:white;
+    font-family: roboto;
+    padding: 20px;
+    text-align: center;
+    align-self: flex-end;
+    transform: translateX(20px);
+    border-radius: 5px;
+    margin-bottom: 100px;
+    position:sticky;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.arrow{
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    padding-top: 100px;
+    cursor: pointer;
+}
+
+.slide{
+    opacity:1 ;
+    transition: 1s linear;
+   
+}
+
+.on{
+    opacity: 0;
+    transform: scale(0.95);
+    transition: 1s;
+}

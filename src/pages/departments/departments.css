@@ -1,0 +1,51 @@
+.departments{
+    display: flex;
+    flex-direction: column;
+    margin:  0 10% 0 10%;
+    padding: 0;
+    text-align: justify;
+
+}
+
+.accordion{
+    width: 80%;
+    align-self: center;
+}
+
+.item{
+    background-color: rgb(132, 132, 251);
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+}
+
+
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.title span{
+    font-size: 30px;
+}
+
+.content{
+    height: auto;
+    padding: 10px;
+    max-height: 9999px;
+    display: flex;
+    flex-direction: row;
+}
+
+.rotated{
+    transform: rotate(90deg);
+}
+
+.contact{
+    text-align: center;
+}
