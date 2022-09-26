@@ -1,12 +1,12 @@
-import {React,useState} from 'react'
-// import useContentful from '../../useContentful'
+import {React,useEffect, useState} from 'react'
 import './publications.css'
-import alhudaa from '../../Assets/Al-hudaa.png';
+// import alhudaa from '../../Assets/Al-hudaa.png';
 import MKAlogo from '../../Assets/MKAlogo2.png';
 import website from '../../Assets/website.png';
 import mail from '../../Assets/mail.png';
 import twitter from '../../Assets/twitter.png';
 import location from '../../Assets/location.png';
+import {createClient} from 'contentful';
 import { khadimData } from '../../components/khadimData';
 import {faArrowRight, faArrowLeft, faArrowDown,faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,6 +15,44 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Publications = () => {
     const [current, setCurrent]= useState(0);
     const length =khadimData.length;
+
+    const [khadim, setKhadim] = useState([]);
+    const [alhudaa, setAlhudaa] = useState([]);
+    const [book, setBook] = useState([]);
+
+    const client = createClient({
+        space:'zi6ckvx6l9c9',
+        accessToken: 'WjEkqWaTmBd4UlIZiW6sOoi3XaZDMCmNZsRWJ4_mvU0',
+        host: 'preview.contentful.com',
+
+      });
+
+
+      useEffect(() => {
+        const getInfo = async () => {
+          try {
+            await client.getEntries({ content_type: "book" , order: 'fields.id'}).then((entries) => {
+              console.log(entries);
+            //   setBook(entries.items);
+            });
+            // await client
+            //   .getEntries({ content_type: "khadim", order:"fields.id" })
+            //   .then((response) => {
+            //     console.log(response);
+            //     // setKhadim(entries.items);
+            //   });
+            // await client
+            //   .getEntries({ content_type: "alHudaa", order:"fields.id"  })
+            //   .then((entries) => {
+            //     console.log(response);
+            //     // setAlhudaa(entries.items);
+            //   });
+          } catch (error) {
+            console.log('error fetching entries');
+          }
+        };
+        getInfo();
+      }, []);
 
     const nextSlide =() => {
 
